@@ -1,6 +1,6 @@
 /** From Head First Design Patterns, Freeman & Robson et al. */ 
 
-public class DinerMenu implements Menu {
+public class DinerMenu implements Menu{
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;

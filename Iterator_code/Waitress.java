@@ -10,8 +10,8 @@ public class Waitress {
     }
 
     public void printMenu() {
-        Iterator pancakeIterator = pancakeHouseMenu.createIterator();
-        Iterator dinerIterator = dinerMenu.createIterator();
+        Iterator pancakeIterator = (Iterator) pancakeHouseMenu.createIterator();
+        Iterator dinerIterator = (Iterator) dinerMenu.createIterator();
 
         System.out.println("MENU\n----\nBREAKFAST");
         printMenu(pancakeIterator);
@@ -30,16 +30,16 @@ public class Waitress {
     }
 
     public void printVegetarianMenu() {
-        printVegetarianMenu(pancakeHouseMenu.createIterator());
-        printVegetarianMenu(dinerMenu.createIterator());
+        printVegetarianMenu((Iterator)pancakeHouseMenu.createIterator());
+        printVegetarianMenu((Iterator)dinerMenu.createIterator());
     }
 
     public boolean isItemVegetarian(String name) {
-        Iterator breakfastIterator = pancakeHouseMenu.createIterator();
+        Iterator breakfastIterator = (Iterator)pancakeHouseMenu.createIterator();
         if (isVegetarian(name, breakfastIterator)) {
             return true;
         }
-        Iterator dinnerIterator = dinerMenu.createIterator();
+        Iterator dinnerIterator = (Iterator)dinerMenu.createIterator();
         if (isVegetarian(name, dinnerIterator)) {
             return true;
         }

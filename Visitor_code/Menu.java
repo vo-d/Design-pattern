@@ -50,4 +50,8 @@ public class Menu extends MenuComponent {
     public void accept(Visitor v) {
         v.visit(this);
     }
+
+    public Iterator createIterator() {
+        return null;
+    }
 }

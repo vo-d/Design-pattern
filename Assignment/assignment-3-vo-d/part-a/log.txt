@@ -1,0 +1,10 @@
+2022-11-18 20:44:14 MacroCommand
+2022-11-18 20:44:14 MacroCommand
+2022-11-18 20:44:14 MacroCommand
+2022-11-18 20:44:15 MacroCommand
+2022-11-18 20:44:16 MacroCommand
+2022-11-18 20:44:17 LightOnCommand
+2022-11-18 20:44:18 LightOffCommand
+2022-11-18 20:44:18 StereoOnWithCDCommand
+2022-11-18 20:44:18 StereoOffCommand
+2022-11-18 20:44:19 MacroCommand

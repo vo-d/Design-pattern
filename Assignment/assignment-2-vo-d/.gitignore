@@ -1,0 +1,40 @@
+# What is this file? 
+# This is a file with no name and `gitignore` extension.
+# It exists in the root of the git repo, and is used to ignore adding some files to git.
+# NOTE: Comments in .gitignore start with a '#' (so all these are comments)
+ 
+# For example, how do you remove the `.class`, `.ctxt` files, or the `.vscode` or `.idea`  folder? 
+# You cannot in your local since you need them to test, or to code. 
+# But those should not be added to the remote (because of it's limited storage, and since these files and folders can be auto generated in any co-developers local). 
+# Then we create a new file in the root of git repo called .gitignore. 
+# This is a normal text file and we can add all the folders/file names in it that wont be added, committed or pushed. 
+# =======================================================================================================================
+
+# Why is this useful to you? 
+# In the last assignment, you might have noticed that some files are added to the remote that you did not intend. Like the .vscode 
+# folder for Visual Studio Code users, or the .idea folder for IntellIj users, or the package.bluej file for BlueJ users. 
+# This is where you can add these names so that they will never be pushed, even if they exist in your local. This is very helpful, 
+# especially for not pushing the secret keys (like passwords, hashed keys) that you include in your projects and the log files. 
+
+# More info: https://www.pluralsight.com/guides/how-to-use-gitignore-file
+# =======================================================================================================================
+
+# <You dont need to change anything in this file, but feel free to play around with it. Depending on the IDE, once you ignore something,
+# its name will appear in a different color (like a dark gray) or might have a small 'i' (ignored) in front of it in the IDE's file explorer
+# to indicate that it has been ignored. 
+
+
+
+# Ignore Mac system files the `.DS_store` files
+.DS_store
+
+# Ignore IntellIJ and VsCode related folders
+.idea/
+.vscode/
+
+# Ingnore the compiled java files. 
+*.ctxt
+*.class
+
+# Ignore BlueJ specific files
+*.bluej
